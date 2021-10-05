@@ -19,4 +19,4 @@ Here's a desktop image of the navigation bar.
 
 ![image](https://user-images.githubusercontent.com/90204456/136060280-a918b8ee-9bf5-4f04-a65e-c8c7f4f07c1d.png)
 
-© 2021 Shanghai Zhanshu Co., Ltd
+© 2021 Shanghai Zhanshu Electronics Co., Ltd
