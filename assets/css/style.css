@@ -15,23 +15,17 @@ h1 {
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 46px;
-}
-
-/* set up the english title */
-#entitle {
-    font-size: 28px;
-}
-
-h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 3px;
 }
 
 header {
     padding: 20px;
 }
 
-nav {
-    float: left;
+header nav {
+    float: right;
     padding-top: 15px;
     margin-right: 20px;
 }
@@ -40,10 +34,24 @@ header nav ul {
     list-style-type: none;
 }
 
-/* make the navigation items in the same line */
+/* make the navigation items white and cancel the effect of hyperlinks */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* make the navigation items in the same line and make them in the same line with h1*/
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
+    margin-top: 30px;
+}
+
+/* set up the english title */
+#entitle {
+    font-size: 28px;
+    margin-top: 2px;
+    margin-left: 5px;
 }
 
 /* make the profile picture */
@@ -53,6 +61,7 @@ header nav ul li {
     margin-bottom: 25px;
     background-image: url("https://static.yczihua.com/images/201804/goods_img/10351_P_1524681681326.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 /* set up different sections in the main body */
@@ -65,6 +74,10 @@ section {
     padding: 50px;
     height: 300px;
     background-color: rgb(7, 190, 7);
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* put the footer in the center */
