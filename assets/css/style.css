@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    background-color: darkgreen;
+}
+
+/* set up the chinese title */
+h1 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 46px;
+    display: inline-block;
+}
+
+/* set up the english title */
+#entitle {
+    font-size: 28px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    padding: 20px;
+}
+
+nav {
+    float: left;
+    padding-top: 15px;
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+/* make the navigation items in the same line */
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* make the profile picture */
+.profilepic {
+    height: 350px;
+    width: 50%;
+    margin-bottom: 25px;
+    background-image: url("https://static.yczihua.com/images/201804/goods_img/10351_P_1524681681326.jpg");
+    background-size: cover;
+}
+
+/* set up different sections in the main body */
+main {
+    width: 75%;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: rgb(7, 190, 7);
+}
+
+/* put the footer in the center */
+footer {
+    clear: both;
+    text-align: center;
+}
