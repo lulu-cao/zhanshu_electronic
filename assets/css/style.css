@@ -4,6 +4,7 @@
 
 body {
     background-color: white;
+    line-height: 1.5;
 }
 
 header {
@@ -70,7 +71,7 @@ header nav ul li {
     width: 100%;
     margin-bottom: 15px;
     margin-right: 20px;
-    background-image: url("https://static.yczihua.com/images/201804/goods_img/10351_P_1524681681326.jpg");
+    background-image: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg1001.pocoimg.cn%2Fimage%2Fpoco%2Fworks%2F60%2F2013%2F0508%2F21%2F64196990201305082158004468847054591_014_64196990.jpg&refer=http%3A%2F%2Fimg1001.pocoimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1636140659&t=0ec755fea531c74fcca3f4aff49d6d6e");
     background-size: cover;
     text-align: center;
     flex: 1 1 0;
@@ -78,15 +79,15 @@ header nav ul li {
 
 /* The flex container becomes flexible */
 main {
-    width: 75%;
     display: block;
+    overflow: auto;
+    padding: 1px;
 }
 
 /* The flex items are aligned to the center */
 .main {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
     background: linear-gradient(rgb(7, 190, 7), rgb(178, 240, 128));
     border: 2px solid green;
     border-radius: 20px;
@@ -103,9 +104,23 @@ h2 {
     font-size: 20px;
 }
 
+#yellow h2 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px 0;
+}
+
+#yellow {
+    background-color: lightyellow;
+}
+
 main ul {
     clear: both;
     justify-content: end;
+}
+
+main p {
+    margin-top: 20px;
 }
 
 .second {
@@ -113,20 +128,30 @@ main ul {
     background-color:#b9c6ae;
     flex: 1 1 200px;
     width: 500px;
-    height: 300px;
-    margin: 20px;
+    flex-wrap: wrap;
 }
 
-.second {
-    justify-content: space-between;
+.second img {
+    height: 200px;
+    width: 230px;
+    margin: 30px;
+    padding: auto;
+}
+
+div div section {
+    text-align: center;
 }
 
 .left {
     float: left;
+    margin-left: 12%;
+    justify-content: space-evenly;
 }
 
 .right {
-    float: left;
+    float: right;
+    margin-right: 12%;
+    margin-bottom: 3%;
 }
 
 /* put the footer in the center */
@@ -137,8 +162,24 @@ footer {
     line-height: 1.5;
 }
 
+.pbottom {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d8a47f;
+}
+
 @media screen and (max-width:992px) {
     nav {
         display: none;
+    }
+
+    .left {
+        text-align: center;
+        margin: auto;
+    }
+
+    .right {
+        text-align: center;
+        margin: auto;
+        float: left;
     }
 }
