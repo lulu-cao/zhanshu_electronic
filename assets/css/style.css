@@ -167,6 +167,41 @@ footer {
     border-bottom: 1px solid #d8a47f;
 }
 
+/* add forms and files */
+.forms a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.forms a::before {
+    content: '📝';
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.resourceicon a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.forms h2 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px 0;
+}
+
+.resourceicon h2 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px 0;
+}
+
+.resourceicon a::before {
+    content: '📖';
+    display: inline-block;
+    margin-right: 3px;
+}
+
 @media screen and (max-width:992px) {
     nav {
         display: none;
