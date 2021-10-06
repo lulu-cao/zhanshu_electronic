@@ -182,10 +182,22 @@ div div section {
     margin: 20px 0;
 }
 
+.forms h2::before {
+    content: '🏗️';
+    display: inline-block;
+    margin-right: 5px;
+}
+
 .resourceicon h2 {
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 20px 0;
+}
+
+.resourceicon h2::before {
+    content: '💡';
+    display: inline-block;
+    margin-right: 5px;
 }
 
 .resourceicon a::before {
