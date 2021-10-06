@@ -40,6 +40,16 @@ a {
     text-decoration: none;
 }
 
+/* change the color and font weight of the navbar items when hovering */
+a:hover {
+    color: lightgoldenrodyellow;
+    font-weight: 600;
+}
+
+a:active {
+    color: yellow;
+}
+
 /* make the navigation items in the same line and make them in the same line with h1*/
 header nav ul li {
     display: inline-block;
@@ -56,32 +66,79 @@ header nav ul li {
 
 /* make the profile picture */
 .profilepic {
-    height: 350px;
-    width: 50%;
-    margin-bottom: 25px;
+    height: 700px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-right: 20px;
     background-image: url("https://static.yczihua.com/images/201804/goods_img/10351_P_1524681681326.jpg");
     background-size: cover;
-    background-position: center;
+    text-align: center;
+    flex: 1 1 0;
 }
 
-/* set up different sections in the main body */
+/* The flex container becomes flexible */
 main {
     width: 75%;
+    display: block;
 }
 
-section {
+/* The flex items are aligned to the center */
+.main {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    background-color: rgb(7, 190, 7);
+    background: linear-gradient(rgb(7, 190, 7), rgb(178, 240, 128));
+    border: 2px solid green;
+    border-radius: 20px;
+    clear: both;
+}
+
+.main:hover {
+    border: 3px;
+    background: linear-gradient(rgb(4, 150, 4), rgb(33, 236, 33))
 }
 
 h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+main ul {
+    clear: both;
+    justify-content: end;
+}
+
+.second {
+    border: 1px solid black;
+    background-color:#b9c6ae;
+    flex: 1 1 200px;
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+}
+
+.second {
+    justify-content: space-between;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: left;
 }
 
 /* put the footer in the center */
 footer {
     clear: both;
     text-align: center;
+    margin: 20px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width:992px) {
+    nav {
+        display: none;
+    }
 }
