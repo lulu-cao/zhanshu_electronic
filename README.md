@@ -15,8 +15,9 @@ In this project, I have been designing a website for Shanghai Zhanshu Electronic
 To deploy this website, simply follow [this](https://lulu-cao.github.io/zhanshu_electronics/) link or enter the following into your address bar: https://lulu-cao.github.io/zhanshu_electronics/.
 
 # Screenshots
+
 ## Subheader
-abcnandlkfjadafdgagsad
+test test test
 
 Here's a desktop image of the navigation bar. 
 
