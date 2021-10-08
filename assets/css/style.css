@@ -121,29 +121,70 @@ h2 {
     }
 
 /* the contact page */
-    .contact #contacth {
+    form #contacth {
         color: black;
         font-size: 30px;
-        margin-bottom: 20px;
+        margin: 20px;
     }
 
-    .contact p {
+    form p {
         margin-bottom: 20px;
+        margin-left: 20px;
     }
 
-    textarea {
+    label {
+        margin-left: 20px;
+    }
+
+    input {
         width: 300px;
         margin: 10px 40px;
         opacity: 50%;
     }
 
-    #contactbody {
+    input:focus {
+        box-shadow: 0 0 5px grey;
+    }
+
+    select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-image: url("../images/arrow.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        margin-left: 13px;
+        border-color: grey;
+        color: grey;
+        width: 213px;
+    }
+
+    select:hover, button:hover {
+        box-shadow: 0 0 5px grey;
+    }
+
+    #name {
+        margin-left: 26px;
+    }
+
+    #email {
+        margin-left: 31px;
+    }
+
+    #subject {
+        margin-left: 15px;
+    }
+
+    #message {
         width: 70%;
         height: 200px;
+        padding: 0;
+        margin: 4px;
     }
 
     button {
-        margin: 10px 40px;
+        margin: 10px 20px;
     }
 
 
@@ -250,6 +291,7 @@ h2 {
         text-align: center;
         padding: 5px 0;
         margin-top: 20px;
+        margin-bottom: 0;
         line-height: 1.5;
         background-color: darkgreen;
         color: white;

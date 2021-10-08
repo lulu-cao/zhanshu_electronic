@@ -44,19 +44,37 @@
         </h1>
     </header>
 
-    <main class="contact">
+    <form>
         <h2 id="contacth">Contact Us</h2>
         <p>For more information about our company and services, please contact us using the form below.</p>
-        <textarea>Your Name</textarea>
+
+        <label>Name: </label>
+        <input id="name" type="text" placeholder="First Name, Last Name" />
         <br>
-        <textarea>Your Email</textarea>
+
+        <label>Email: </label>
+        <input id="email" type="text" placeholder="0000000@example.com" />
         <br>
-        <textarea>Subject</textarea>
+
+        <label>Reason for Contact: </label>
+        <select>
+            <option>Business collaboration</option>
+            <option>Advertisement</option>
+            <option>Feedback on our services</option>
+            <option>Feedback on our website</option>
+        </select>
         <br>
-        <textarea id="contactbody">Content</textarea>
+
+        <label>Subject: </label>
+        <input id="subject" type="text" placeholder="Subject" />
         <br>
+
+        <label>Message: </label>
+        <input id="message" type="text" placeholder="Leave your message here" />
+        <br>
+
         <button>Submit</button>
-    </main>
+    </form>
 
     <footer>
         <p>&copy; 2021 上海展树电子有限公司</p>
