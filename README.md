@@ -1,6 +1,6 @@
 # Shanghai Zhanshu Electronics Co., Ltd
 
-In this project, I have been designing a website for Shanghai Zhanshu Electronics Co., Ltd from scratch. This project is still in progress. The website will contain both Chinese and English versions. This website will help advertise the company, showcase their activities, help the users connect with the company, and seek additional resources.
+In this project, I have been designing a multi-page website for Shanghai Zhanshu Electronics Co., Ltd. This project is still in progress. The website will contain both Chinese and English versions. This website will help advertise the company, showcase their activities, help the users connect with the company, and seek additional resources.
 
 ---
 
@@ -16,8 +16,9 @@ To deploy this website, simply follow [this](https://lulu-cao.github.io/zhanshu_
 
 # Screenshots
 
-Here's a desktop image of the navigation bar. 
+Here are the desktop images of some webpages. 
 
-![image](https://user-images.githubusercontent.com/90204456/136060280-a918b8ee-9bf5-4f04-a65e-c8c7f4f07c1d.png)
+![image](./assets/images/services_page.jpg)
+![image](./assets/images/contact_page.jpg)
 
 © 2021 Shanghai Zhanshu Electronics Co., Ltd
