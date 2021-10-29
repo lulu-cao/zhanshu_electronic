@@ -77,7 +77,7 @@ h2 {
         width: 100%;
         margin-bottom: 15px;
         margin-right: 20px;
-        background-image: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg1001.pocoimg.cn%2Fimage%2Fpoco%2Fworks%2F60%2F2013%2F0508%2F21%2F64196990201305082158004468847054591_014_64196990.jpg&refer=http%3A%2F%2Fimg1001.pocoimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1636140659&t=0ec755fea531c74fcca3f4aff49d6d6e");
+        background-image: url("https://img2.baidu.com/it/u=4055858773,4200476737&fm=26&fmt=auto");
         background-size: cover;
         text-align: center;
         flex: 1 1 0;
@@ -105,7 +105,15 @@ h2 {
         background: linear-gradient(rgb(4, 150, 4), rgb(33, 236, 33))
     }
 
+    #news p {
+        color: blue;
+        text-decoration: underline;
+    }
 
+    #resources p {
+        color: blue;
+        text-decoration: underline;
+    }
 
 /* the about page */
     #green h2 {
@@ -133,6 +141,22 @@ h2 {
     }
 
     #directoryContainer {
+        display: flex;        
+        justify-content: center;
+        overflow: auto;
+    }
+
+    #certificate {
+        background-image: url("../images/营业执照.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80%;
+        height: 900px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #certificateContainer {
         display: flex;        
         justify-content: center;
         overflow: auto;
@@ -175,7 +199,7 @@ h2 {
         margin-left: 13px;
         border-color: grey;
         color: grey;
-        width: 213px;
+        width: 300px;
     }
 
     select:hover, button:hover {
@@ -276,9 +300,9 @@ h2 {
     }
 
     .resourceicon h2::before {
-        content: '💡';
+        content: '';
         display: inline-block;
-        margin-right: 5px;
+        margin-right: 20px;
     }
 
     .resourceicon a::before {
@@ -297,20 +321,45 @@ h2 {
 
 
 
-/* put the footer in the center */
-    footer {
+/* put the footer at bottom*/
+    #pageContainer {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    #contentWrap {
+        padding-bottom: 2.5rem;
+    }
+
+    #resourceContainer {
+        height: 60vh;
+    }
+
+    #newsContainer {
+        height: 60vh;
+    }
+
+    #footer {
+        font-size: 12px;
         clear: both;
-        text-align: center;
+        height: 100px;
         padding: 5px 0;
         margin-top: 20px;
         margin-bottom: 0;
         line-height: 1.5;
         background-color: darkgreen;
         color: white;
+        /* position: absolute;
+        top: 0; */
+        width: 100%;
+    }
+
+    #footername {
+        margin-top: 28px;
     }
 
     #enfooter {
-        font-size: 14px;
+        font-size: 10px;
     }
 
 

@@ -16,70 +16,88 @@
 </head>
 
 <body>
-    <header>
-        <h1>
-            <a href="../../index.html">上海展树电子工程有限公司</a>
-        </h1>
-       
-        <nav>
-            <ul>
-                <li>
-                    <a href="about.html">公司简介 About</a>
-                </li>
-                <li>
-                    <a href="services.html">主营业务 Services</a>
-                </li>
-                <li>
-                    <a href="contact.html">联系方式 Contact</a>
-                </li>
-                <li>
-                    <a href="resources.html">资源 Resources</a>
-                </li>
-            </ul>
-        </nav>
+    <div id="pageContainer">
+        <div id="contentWrap">
+            <header>
+                <h1>
+                    <a href="../../index.html">上海展树电子工程有限公司</a>
+                </h1>
+            
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="about.html">公司简介<br/>About</a>
+                        </li>
+                        <li>
+                            <a href="services.html">主营业务<br/>Services</a>
+                        </li>
+                        <li>
+                            <a href="news.html">新闻动态<br/>News</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">联系方式<br/>Contact</a>
+                        </li>
+                        <li>
+                            <a href="resources.html">资源<br/>Resources</a>
+                        </li>
+                    </ul>
+                </nav>
 
-        <h1 id="englishtitle">
-            <a href="../../index.html">Shanghai Zhanshu Electronics Co., Ltd</a>
-        </h1>
-    </header>
+                <h1 id="englishtitle">
+                    <a href="../../index.html">Shanghai Zhanshu Electronics Co., Ltd</a>
+                </h1>
+            </header>
 
-    <form>
-        <h2 id="contacth">Contact Us</h2>
-        <p>For more information about our company and services, please contact us using the form below.</p>
+            <main>
+                <form>
+                    <h2 id="contacth">联系我们 Contact Us</h2>
 
-        <label>Name: </label>
-        <input id="name" type="text" />
-        <br>
+                    <label>姓名 Name: </label>
+                    <input id="name" type="text" />
+                    <br>
 
-        <label>Email: </label>
-        <input id="email" type="text" />
-        <br>
+                    <label>邮箱 Email: </label>
+                    <input id="email" type="text" />
+                    <br>
 
-        <label>Reason for Contact: </label>
-        <select>
-            <option>Business collaboration</option>
-            <option>Advertisement</option>
-            <option>Feedback on our services</option>
-            <option>Feedback on our website</option>
-        </select>
-        <br>
+                    <label>联系原因 Reason for Contact: </label>
+                    <select>
+                        <option>商业合作 Business collaboration</option>
+                        <option>广告 Advertisement</option>
+                        <option>售后服务 Post-sales services</option>
+                        <option>投诉 Complaint</option>
+                        <option>其他 Other</option>
+                    </select>
+                    <br>
 
-        <label>Subject: </label>
-        <input id="subject" type="text" />
-        <br>
+                    <label>标题 Subject: </label>
+                    <input id="subject" type="text" />
+                    <br>
 
-        <label>Message: </label>
-        <input id="message" type="text" placeholder="This is a test form. Your message won't be directed anywhere. But you can click on 'submit' to test its function." />
-        <br>
+                    <label>内容 Message: </label>
+                    <input id="message" type="text" placeholder="这个功能还在建设中。This is a test form. You can click on 'submit' to test its function." />
+                    <br>
 
-        <button id="submit">Submit</button>
-        <span id="response"></span>
-    </form>
+                    <button id="submit">提交 Submit</button>
+                    <span id="response"></span>
+                </form>
+            </main>
+        </div>
 
-    <footer>
-        <p>&copy; 2021 上海展树电子有限公司</p>
-        <p id="enfooter">Shanghai Zhanshu Electronics Co., Ltd</p>
-    </footer>
+        <footer id="footer">
+            <div class="right">
+                <p>地址 Add: 上海嘉定区芳林路888弄5号</p>
+                <p>手机 Mob: 13285625555 13916298805</p>
+                <p>电话 Tel: 021-69022258</p>
+                <p>传真 Fax: 021-69022258</p>
+                <p>邮件 Email: 997046079@qq.com</p>
+            </div>
+            <div class="left" id="footername">
+                <p>&copy; 2021 上海展树电子有限公司</p>
+                <p id="enfooter">Shanghai Zhanshu Electronics Co., Ltd</p>
+            </div>
+        </footer>
+    </div>
     
     <script src="../js/script.js"></script>
 </body>
