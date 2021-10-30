@@ -13,36 +13,79 @@ h2 {
 }
 
 /* header */
-    header {
-        background-color: darkgreen;
-        padding: 20px;
-    }
+header {
+    background-color: darkgreen;
+    padding: 20px;
+}
 
-    /* set up the chinese title */
-    h1 {
-        color: white;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 46px;
-        display: inline-block;
-        margin-bottom: 0;
-        margin-top: 3px;
-    }
+/* dropdown menu */
+.dropdown {
+    display: none;
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
 
-    /* set up the navbar */
-    header nav {
-        float: right;
-        padding-top: 15px;
-        margin-right: 20px;
-    }
+.dropdownbtn {
+    display: none;
+    width: 80px;
+    height: 50px;
+    font-size: 28px;
+    font-weight: 400;
+    float: right;
+    margin-top: -2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
 
-    header nav ul {
-        list-style-type: none;
-    }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(1, 61, 1);
+    min-width: 250px;
+    overflow: auto;
+    z-index: 1;
+}
 
-    a {
-        color: white;
-        text-decoration: none;
-    }
+.dropdown-content a {
+    font-size: 23px;
+    padding: 2px 16px;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: rgb(22, 22, 22);
+}
+
+.show {
+    display: block;
+}
+
+/* set up the chinese title */
+h1 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 46px;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 3px;
+}
+
+/* set up the navbar */
+header nav {
+    float: right;
+    padding-top: 15px;
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
 
     /* change the color and font weight of the navbar items when hovering */
     a:hover {
@@ -59,6 +102,10 @@ h2 {
         display: inline-block;
         margin-left: 25px;
         margin-top: 30px;
+    }
+
+    .listItems {        
+        text-align: center;
     }
 
     /* set up the english title */
@@ -128,22 +175,6 @@ h2 {
         height: 100%;
         margin: 0 20px;
         line-height: 1.8;
-    }
-
-    #directory {
-        background-image: url("../images/about-directory.jpg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 50%;
-        height: 600px;
-        display: flex;        
-        justify-content: center;
-    }
-
-    #directoryContainer {
-        display: flex;        
-        justify-content: center;
-        overflow: auto;
     }
 
     #certificate {
@@ -322,36 +353,42 @@ h2 {
 
 
 /* put the footer at bottom*/
-    #pageContainer {
-        position: relative;
-        min-height: 100vh;
+    .showcase {
+        height: 80vh;
     }
-
-    #contentWrap {
-        padding-bottom: 2.5rem;
-    }
-
+    
     #resourceContainer {
-        height: 60vh;
+        height: 80vh;
     }
 
     #newsContainer {
-        height: 60vh;
+        height: 80vh;
+    }
+
+    #contactForm {
+        height: 80vh;
+    }
+
+    .containerInFooter {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        flex-direction: column;
     }
 
     #footer {
-        font-size: 12px;
+        font-size: 14px;
         clear: both;
-        height: 100px;
+        width: 100%;
+        height: 120px;
         padding: 5px 0;
         margin-top: 20px;
         margin-bottom: 0;
         line-height: 1.5;
         background-color: darkgreen;
         color: white;
-        /* position: absolute;
-        top: 0; */
-        width: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        flex-direction: column;
     }
 
     #footername {
@@ -359,25 +396,51 @@ h2 {
     }
 
     #enfooter {
-        font-size: 10px;
+        font-size: 12px;
     }
 
 
 
 /* more mobile responsive */
 @media screen and (max-width:992px) {
-    nav {
-        display: none;
-    }
+nav {
+    display: none;
+}
 
-    .left {
-        text-align: center;
-        margin: auto;
-    }
+.dropdownbtn {
+    display: block;
+}
 
-    .right {
-        text-align: center;
-        margin: auto;
-        float: left;
-    }
+.left {
+    text-align: center;
+    margin: auto;
+}
+
+.right {
+    text-align: center;
+    margin: auto;
+    float: left;
+}
+
+/* index.html */
+.main p {
+    font-size: 15px;
+}
+
+/* footer */
+#footer {
+    height: 14rem;
+}
+
+.containerInFooter {
+    font-size: 26px;
+}
+
+#footername {
+    display: none;
+}
+
+#enfooter {
+    font-size: 24px;
+}
 }
