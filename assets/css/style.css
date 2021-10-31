@@ -7,10 +7,6 @@ body {
     line-height: 1.5;
 }
 
-h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 26px;
-}
 
 /* header */
 header {
@@ -23,18 +19,19 @@ header {
     display: none;
     position: relative;
     display: inline-block;
-    margin-left: 20px;
 }
 
 .dropdownbtn {
     display: none;
     width: 80px;
     height: 50px;
-    font-size: 28px;
-    font-weight: 400;
+    border: none;
+    color: white;
+    background-color: darkgreen;
+    font-size: 36px;
+    font-weight: 500;
     float: right;
-    margin-top: -2rem;
-    margin-right: 1rem;
+    margin-left: -0.1rem;
     cursor: pointer;
 }
 
@@ -42,14 +39,14 @@ header {
     display: none;
     position: absolute;
     background-color: rgb(1, 61, 1);
-    min-width: 250px;
+    min-width: 360px;
     overflow: auto;
     z-index: 1;
 }
 
 .dropdown-content a {
-    font-size: 23px;
-    padding: 2px 16px;
+    font-size: 36px;
+    padding: 5px 16px;
     display: block;
 }
 
@@ -87,35 +84,33 @@ a {
     text-decoration: none;
 }
 
-    /* change the color and font weight of the navbar items when hovering */
-    a:hover {
-        color: lightgoldenrodyellow;
-        font-weight: 600;
-    }
+/* change the color and font weight of the navbar items when hovering */
+a:hover {
+    color: lightgoldenrodyellow;
+    font-weight: 600;
+}
 
-    a:active {
-        color: yellow;
-    }
+a:active {
+    color: yellow;
+}
 
-    /* make the navigation items in the same line and make them in the same line with h1*/
-    header nav ul li {
-        display: inline-block;
-        margin-left: 25px;
-        margin-top: 30px;
-    }
+/* make the navigation items in the same line and make them in the same line with h1*/
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 30px;
+}
 
-    .listItems {        
-        text-align: center;
-    }
+.listItems {        
+    text-align: center;
+}
 
-    /* set up the english title */
-    #englishtitle {
-        font-size: 28px;
-        margin-top: 2px;
-        margin-left: 5px;
-    }
-
-
+/* set up the english title */
+#englishtitle {
+    font-size: 28px;
+    margin-top: 2px;
+    margin-left: 5px;
+}
 
 /* the home page */
     /* set up the profile picture */
@@ -146,6 +141,11 @@ a {
         border-radius: 20px;
         clear: both;
     }
+
+    .main h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 26px;
+    }    
 
     .main:hover {
         border: 3px;
@@ -396,13 +396,14 @@ a {
     }
 
     #enfooter {
-        font-size: 12px;
+        font-size: 14px;
     }
 
 
 
 /* more mobile responsive */
 @media screen and (max-width:992px) {
+/* header of all pages */
 nav {
     display: none;
 }
@@ -422,9 +423,28 @@ nav {
     float: left;
 }
 
-/* index.html */
+#englishtitle {
+    font-size: 35px;
+}
+
+/* the home page */
 .main p {
     font-size: 15px;
+}
+
+/* the about page */
+#green p {
+    font-size: 32px;
+}
+
+#green h2 {
+    font-size: 42px;
+}
+
+/* the services page */
+.left, .right {
+    display: block;
+    margin-left: 23%;
 }
 
 /* footer */
