@@ -57,7 +57,7 @@ header {
 }
 
 /* set up the chinese title */
-h1 {
+#chineseTitle {
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 46px;
@@ -104,8 +104,8 @@ header nav ul li {
 }
 
 /* set up the english title */
-#englishtitle {
-    font-size: 16px;
+#englishTitle {
+    font-size: 32px;
     margin-top: 2px;
     margin-left: 5px;
 }
@@ -400,13 +400,37 @@ header nav ul li {
 
 
 /* more mobile responsive */
-@media screen and (max-width:414px) {
+@media screen and (max-width: 768px) {
+    /* the services page */
+    .left, .right, .second {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* .left {
+        float: left;
+        margin-left: 12%;
+        justify-content: space-evenly;
+    }
+
+    .right {
+        float: right;
+        margin-right: 12%;
+        margin-bottom: 3%;
+    } */
+
+}
+
+@media screen and (max-width: 540px) {
 /* 414px for iphone 6/7/8 plus, 540px for surface duo, 768px for ipad */
 /* header of all pages */
 header {
     padding: none;
     text-align: center;
 }
+
 nav {
     display: none;
 }
@@ -449,10 +473,17 @@ nav {
     font-size: 42px;
 }
 
+#certificate {
+    width: 80%;
+    height: 900px;
+}
+
 /* the services page */
-.left, .right {
-    display: block;
-    margin-left: 23%;
+.left, .right, .second {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /* footer */
