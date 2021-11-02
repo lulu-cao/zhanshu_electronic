@@ -23,15 +23,13 @@ header {
 
 .dropdownbtn {
     display: none;
-    width: 80px;
+    width: 800px;
     height: 50px;
     border: none;
     color: white;
     background-color: darkgreen;
     font-size: 36px;
-    font-weight: 500;
-    float: right;
-    margin-left: -0.1rem;
+    font-weight: 800;
     cursor: pointer;
 }
 
@@ -107,7 +105,7 @@ header nav ul li {
 
 /* set up the english title */
 #englishtitle {
-    font-size: 28px;
+    font-size: 16px;
     margin-top: 2px;
     margin-left: 5px;
 }
@@ -402,14 +400,20 @@ header nav ul li {
 
 
 /* more mobile responsive */
-@media screen and (max-width:992px) {
+@media screen and (max-width:414px) {
+/* 414px for iphone 6/7/8 plus, 540px for surface duo, 768px for ipad */
 /* header of all pages */
+header {
+    padding: none;
+    text-align: center;
+}
 nav {
     display: none;
 }
 
 .dropdownbtn {
     display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .left {
@@ -423,8 +427,12 @@ nav {
     float: left;
 }
 
-#englishtitle {
-    font-size: 35px;
+#chineseTitle {
+    font-size: 60px;
+}
+
+#englishTitle {
+    font-size: 32px;
 }
 
 /* the home page */
