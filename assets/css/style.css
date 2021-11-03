@@ -95,6 +95,7 @@ a:active {
 /* make the navigation items in the same line and make them in the same line with h1*/
 header nav ul li {
     display: inline-block;
+    font-weight: 1000;
     margin-left: 25px;
     margin-top: 30px;
 }
@@ -105,7 +106,7 @@ header nav ul li {
 
 /* set up the english title */
 #englishTitle {
-    font-size: 32px;
+    font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 2px;
     margin-left: 5px;
@@ -281,13 +282,13 @@ header nav ul li {
         text-align: center;
     }
 
-    .left {
+    .showcase .left {
         float: left;
         margin-left: 12%;
         justify-content: space-evenly;
     }
 
-    .right {
+    .showcase .right {
         float: right;
         margin-right: 12%;
         margin-bottom: 3%;
@@ -349,9 +350,7 @@ header nav ul li {
         margin-left: 20px;
     }
 
-
-
-/* put the footer at bottom*/
+/* setting the footer */
     .showcase {
         height: 80vh;
     }
@@ -380,8 +379,6 @@ header nav ul li {
         width: 100%;
         height: 120px;
         padding: 5px 0;
-        margin-top: 20px;
-        margin-bottom: 0;
         line-height: 1.5;
         background-color: darkgreen;
         color: white;
@@ -396,31 +393,38 @@ header nav ul li {
     }
 
     #enfooter {
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    #footer .left {
+        float: left;
+        margin-left: 6%;
+    }
+
+    #footer .right {
+        float: right;
+        margin-right: 6%;
     }
 
 /* more mobile responsive */
 @media screen and (max-width: 768px) {
-    /* the services page */
-    .left, .right, .second {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-    }
+#englishTitle {
+    font-size: 19px;
+}
 
-    /* .left {
-        float: left;
-        margin-left: 12%;
-        justify-content: space-evenly;
-    }
+/* the services page */
+.showcase {
+    height: 140vh;
+}
 
-    .right {
-        float: right;
-        margin-right: 12%;
-        margin-bottom: 3%;
-    } */
+.showcase .left {
+    float: left;
+    margin-left: 17%;
+}
 
+.showcase .right {
+    float: right;
+    margin-right: 17%;
 }
 
 @media screen and (max-width: 540px) {
@@ -437,7 +441,18 @@ nav {
 
 .dropdownbtn {
     display: block;
+    font-size: 18px;
+    height: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.dropdown-content {
+    min-width: 200px;
+}
+
+.dropdown-content a {
+    font-size: 16px;
+    padding: 5px 16px;
 }
 
 .left {
@@ -452,11 +467,11 @@ nav {
 }
 
 #chineseTitle {
-    font-size: 60px;
+    font-size: 22px;
 }
 
 #englishTitle {
-    font-size: 32px;
+    font-size: 18px;
 }
 
 /* the home page */
@@ -466,40 +481,87 @@ nav {
 
 /* the about page */
 #green p {
-    font-size: 32px;
+    font-size: 18px;
 }
 
 #green h2 {
-    font-size: 42px;
+    font-size: 22px;
 }
 
 #certificate {
-    width: 80%;
-    height: 900px;
+    background-size: contain;
+    width: 100%;
+    height: 300px;
 }
 
-/* the services page */
-.left, .right, .second {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+/* the services page needs to modify */
+/* .showcase .left {
+    margin-left: 3rem;
 }
+
+.showcase .right {
+    margin-right: 3rem;
+} */
+
+.second {
+    width: 320px;
+}
+
+/* the news and resources page */
+.forms h2 {
+    font-size: 22px;
+}
+
+.resourceicon h2 {
+    font-size: 22px;
+}
+
+/* the contact page */
+form #contacth {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input {
+    margin: 10px 0;
+    opacity: 1;
+}
+
+select {
+    margin-left: 30px;
+}
+
+#email {
+    margin-left: 28px;
+}
+
+#name {
+    margin-left: 26px;
+}
+
+#subject {
+    margin-left: 30px;
+}
+
+#message {
+    width: 85%;
+    margin: 30px;
+}
+
+/* button {
+    margin: 10px 20px;
+} */
 
 /* footer */
 #footer {
-    height: 14rem;
+    height: 11rem;
 }
 
 .containerInFooter {
-    font-size: 26px;
+    font-size: 18px;
 }
 
 #footername {
     display: none;
-}
-
-#enfooter {
-    font-size: 24px;
 }
 }
