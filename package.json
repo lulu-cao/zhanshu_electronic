@@ -1,0 +1,24 @@
+{
+  "name": "zhanshu_electronic",
+  "version": "1.0.0",
+  "description": "In this project, I have been designing a website for Shanghai Zhanshu Electronic Engineering Co., Ltd. This project is still in progress. The website will contain both Chinese and English versions. It will help advertise the company, showcase their activities, help the users connect with the company, and seek additional resources.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lulu-cao/zhanshu_electronics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lulu-cao/zhanshu_electronics/issues"
+  },
+  "homepage": "https://github.com/lulu-cao/zhanshu_electronics#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^8.2.0"
+  }
+}
