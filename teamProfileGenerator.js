@@ -4,7 +4,7 @@ const path = require('path');
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
-const generateHTML = require('./generateHTML');
+const render = require('./generateHTML');
 const addedEmployees = [];
 const idArray = [];
   
@@ -15,7 +15,7 @@ function createHTML() {
   if (!fs.existsSync(outputDirectory)) {
     fs.mkdirSync(outputDirectory)
   };
-  fs.writeFileSync(outputPath, generateHTML(addedEmployees), "utf-8")
+  fs.writeFileSync(outputPath, render(addedEmployees), "utf-8")
 };
 
 function addMembers() {
@@ -118,7 +118,7 @@ function addMembers() {
         message: 'What is the name of the employee?',
         name: 'name',
         validate: response => {
-          if (response.name === "") {
+          if (response === "") {
             return "Please enter at least one character"
           } else {
             return true
@@ -182,7 +182,7 @@ function addMembers() {
         message: 'What is the name of the employee?',
         name: 'name',
         validate: response => {
-          if (response.name === "") {
+          if (response === "") {
             return "Please enter at least one character"
           } else {
             return true
@@ -224,7 +224,7 @@ function addMembers() {
         message: 'What is your school name?',
         name: 'school',
         validate: response => {
-          if (response.name === "") {
+          if (response === "") {
             return "Please enter at least one character"
           } else {
             return true

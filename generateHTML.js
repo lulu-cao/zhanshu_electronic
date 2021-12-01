@@ -2,57 +2,62 @@ const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
 const Manager = require('./lib/manager');
 
-function addManager(response) {
-    const newManager = new Manager (response.name, response.id, response.email, response.office);
-    return `<div class="row">
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  ${newManager.getRole()}
-                </div>
-              </div>
-            </div>
-          </div>
-    `
-};
-
-function addEngineer(response) {
-    const newEngineer = new Engineer (response.name, response.id, response.email, response.github);
-    return `<div class="row">
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  ${newEngineer.getRole()}
-                </div>
-              </div>
-            </div>
-          </div>
-    `
-};
-
-function addIntern(response) {
-    const newIntern = new Intern (response.name, response.id, response.email, response.school);
-    return `<div class="row">
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  ${newIntern.getRole()}
-                </div>
-              </div>
-            </div>
-          </div>
-    `
-};
-
 function addEmployeeByType(response) {
-    if (response.typeOfEmployee === "Manager") {
-        return addManager(response)
-    } else if (response.typeOfEmployee === "Engineer") {
-        return addEngineer(response)
-    } else {
-        return addIntern(response)
-    } 
-}
+  function addManager(response) {
+      const newManager = new Manager (response.name, response.id, response.email, response.office);
+      return `<div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    ${newManager.getRole()}
+                  </div>
+                </div>
+              </div>
+            </div>
+      `
+  };
+
+  function addEngineer(response) {
+      const newEngineer = new Engineer (response.name, response.id, response.email, response.github);
+      return `<div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    ${newEngineer.getRole()}
+                  </div>
+                </div>
+              </div>
+            </div>
+      `
+  };
+
+  function addIntern(response) {
+      const newIntern = new Intern (response.name, response.id, response.email, response.school);
+      return `<div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    ${newIntern.getRole()}
+                  </div>
+                </div>
+              </div>
+            </div>
+      `
+  };
+
+  const html = [];
+  html.push(response
+    .filter(employee => employee.getRole === "Manager")
+    .map(manager => addManager(manager)));
+  
+  html.push(response
+    .filter(employee => employee.getRole === "Engineer")
+    .map(engineer => addEngineer(engineer)));
+
+  html.push(response
+    .filter(employee => employee.getRole === "Intern")
+    .map(intern => addIntern(intern)));
+};
 
 function generateHTML(response) {
     return `<!DOCTYPE html>
@@ -81,6 +86,6 @@ function generateHTML(response) {
 </body>
 </html>
 `
-  }
-  
-  module.exports = generateHTML;
+};
+
+module.exports = response => {generateHTML(response)};
