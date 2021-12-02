@@ -1,3 +1,4 @@
+// the company can create a profile for each of its employee with node.js
 const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
