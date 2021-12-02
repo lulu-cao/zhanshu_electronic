@@ -57,7 +57,7 @@ const addProducts = () => {
                 }},
         }
     ]).then((answer) => {
-        connection.query(
+        const q = connection.query(
             "INSERT INTO products SET ?", 
             {
                 product: answer.product,
@@ -66,8 +66,15 @@ const addProducts = () => {
             },
             (err, res) => {
                 if (err) throw err;
-                console.log("The product is successfully added.\n");
-                start()
+                console.log("The product is successfully added. See all items in the database below: \n");
+                // console.logs all the items in the table "products"
+                connection.query("SELECT * FROM products", (err, res) => {
+                    console.log(res);
+                    connection.end();
+                    // console logs the actual changes to the database
+                    console.log(q.sql);
+                    start();
+                });
             })
         })
 };
