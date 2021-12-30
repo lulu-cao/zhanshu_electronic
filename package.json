@@ -4,7 +4,9 @@
   "description": "In this project, I have been designing a website for Shanghai Zhanshu Electronic Engineering Co., Ltd. This project is still in progress. The website will contain both Chinese and English versions. It will help advertise the company, showcase their activities, help the users connect with the company, and seek additional resources.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +20,20 @@
   },
   "homepage": "https://github.com/lulu-cao/zhanshu_electronics#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
     "fs": "0.0.1-security",
     "inquirer": "^8.2.0",
-    "mysql": "^2.18.1"
-  }
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.12.4"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {}
 }

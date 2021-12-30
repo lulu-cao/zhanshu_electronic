@@ -1,0 +1,27 @@
+[
+  {
+    "name": "张天和",
+    "email": "zhang@hotmail.com",
+    "password": "12345"
+  },
+  {
+    "name": "徐承志",
+    "email": "xu@gmail.com",
+    "password": "12345"
+  },
+  {
+    "name": "程佳立",
+    "email": "cheng@aol.com",
+    "password": "12345"
+  },
+  {
+    "name": "楚林",
+    "email": "chu@msn.com",
+    "password": "12345"
+  },
+  {
+    "name": "王兴",
+    "email": "wang@yahoo.com",
+    "password": "12345"
+  }
+]
