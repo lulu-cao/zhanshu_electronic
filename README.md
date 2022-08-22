@@ -12,7 +12,7 @@ In this project, I have been designing a website for Shanghai Zhanshu Electronic
 --- -->
 
 # Deployment
-To deploy this website, simply follow [this](https://lulu-cao.github.io/zhanshu_electronics/) link or enter the following into your address bar: https://lulu-cao.github.io/zhanshu_electronics/.
+To deploy this website, simply follow [this](https://lulu-cao.github.io/zhanshu_electronic/) link or enter the following into your address bar: https://lulu-cao.github.io/zhanshu_electronic/.
 
 # Screenshots
 
